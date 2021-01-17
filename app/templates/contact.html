@@ -1,0 +1,199 @@
+{% load static %}
+
+<html lang="en" style="" class=" js csstransforms3d csstransitions">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="http://slimhamdi.net/tunis/dark/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://slimhamdi.net/tunis/dark/css/preloader.min.css" rel="stylesheet">
+    <link href="http://slimhamdi.net/tunis/dark/css/circle.css" rel="stylesheet">
+    <link href="{% static 'font-awesome.min.css' %}" rel="stylesheet">
+    <link href="http://slimhamdi.net/tunis/dark/css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="http://slimhamdi.net/tunis/dark/css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel=" stylesheet" type="text/css" title="blue" href="  http://slimhamdi.net/tunis/dark/css/skins/blue.css">
+    <link rel="stylesheet" type="text/css" href="http://slimhamdi.net/tunis/dark/css/styleswitcher.css">
+
+    <!-- Modernizr JS File -->
+    <script src="http://slimhamdi.net/tunis/dark/js/modernizr.custom.js"></script>
+</head>
+
+<body class="contact at-top" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed=""><div id="preloader" class="preloader off"><div class="black_wall"></div><div class="loader"></div></div>
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"></a>
+            </li>
+        </ul>
+
+        <a href="https://themeforest.net/item/tunis-personal-portfolio/26761598?irgwc=1&amp;clickid=UBs0rDX6YxyJWfewUx0Mo3E1UkiwozXD10XATw0&amp;iradid=275988&amp;irpid=1327395&amp;iradtype=ONLINE_TRACKING_LINK&amp;irmptype=mediapartner&amp;mp_value1=&amp;utm_campaign=af_impact_radius_1327395&amp;utm_medium=affiliate&amp;utm_source=impact_radius" class="waves-effect waves-light font-weight-700 purchase"><i class="fa fa-shopping-cart"></i> Purchase</a>
+        <div id="hideSwitcher">×</div>
+    </div>
+</div>
+
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="/">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="/about">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="/portfolio">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-envelope-open"></i>
+            <a href="/contact">
+                <h2>Contact</h2>
+            </a>
+        </li>
+
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="/"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="/about"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="/portfolio"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li class="active"><a href="/contact"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
+    <h1>get in <span>touch</span></h1>
+    <span class="title-bg">contact</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side Starts -->
+            <div class="col-12 col-lg-4">
+                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Don't be shy !</h3>
+                <p class="open-sans-font mb-3">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <p class="open-sans-font custom-span-contact position-relative">
+                    <i class="fa fa-envelope-open position-absolute"></i>
+                    <span class="d-block">mail me</span>{{ profile.email }}
+                </p>
+                <p class="open-sans-font custom-span-contact position-relative">
+                    <i class="fa fa-phone-square position-absolute"></i>
+                    <span class="d-block">call me</span>{{ profile.phone }}
+                </p>
+                <ul class="social list-unstyled pt-1 mb-5">
+                    <li class="facebook"><a title="Facebook" href="https://www.facebook.com/mhmd.yasser.77"><i style="margin-top: 11px;" class="fa fa-facebook"></i></a>
+                    </li>
+                   <li class="instagram"><a title="instagram" href="https://www.instagram.com/mhmd.yasserr/"><i style="margin-top: 11px;" class="fa fa-instagram"></i></a>
+
+                    <li class="whatsapp"><a title="whatsapp" href="https://api.whatsapp.com/send/?phone=+201153274828"><i style="margin-top: 11px;" class="fa fa-whatsapp"></i></a>
+                    </li>
+                    <li class="youtube"><a title="Youtube" href="https://www.youtube.com/channel/UCgAie0r3yeXmLlpfTwE-DXA"><i style="margin-top: 11px;" class="fa fa-youtube"></i></a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <!-- Left Side Ends -->
+            <!-- Contact Form Starts -->
+            <div class="col-12 col-lg-8">
+                <form class="contactform" method="POST" >
+                                                                {% csrf_token %}
+
+                    <div class="contactform">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <input id="id_name" maxlength="100" required type="text" name="name" placeholder="YOUR NAME">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input id="id_email" required type="email" name="email" placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input id="id_sub" maxlength="100" required type="text" name="subject" placeholder="YOUR SUBJECT">
+                            </div>
+                            <div class="col-12">
+                                <textarea id="id_message" required name="message" placeholder="YOUR MESSAGE"></textarea>
+                                <button type="submit" class="btn btn-contact"><span data-hover="Send Message">Send Message</span></button>
+                            </div>
+                            <div class="col-12 form-message">
+                                <span class="output_message text-center font-weight-600 text-uppercase"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Contact Form Ends -->
+        </div>
+    </div>
+
+</section>
+<!-- Template JS Files -->
+
+<script src="https://kit.fontawesome.com/70eebe618b.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
